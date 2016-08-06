@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Front-end task BlackWoodSeven">
+    <meta name="author" content="Adrian Diaz Garcia">
+    <title>Black Wood Seven - Front-end task</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport workaround for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- App style -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- FontAwesome (Used for icons like the dots in the table) -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">PREDICT</a>
+                </li>
+                <li class="active"><a href="#">MANAGE</a>
+                </li>
+                <li><a href="#">EVALUATE</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li id='client-section'>
+                    <p>Client name</p>
+                    <a href="#">Account settings</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-md-12">
+                <span class="bold">KPI Status</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel-container col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                <div class="panel panel-default kpi-panel">
+                    <div class="bold panel-heading">Raise sales</div>
+                    <div class="panel-body">
+                        <p class="panel-big">2.750.000</p>
+                        <p><a href="#">Media generated sales</a>
+                        </p>
+                        <p class="panel-small">1.500.000</p>
+                        <p><a href="#">Spend</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-container col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                <div class="panel panel-default kpi-panel">
+                    <div class="bold panel-heading">Gain new subscribers</div>
+                    <div class="panel-body">
+                        <p class="panel-big">220.000</p>
+                        <p><a href="#">Media generated subscribers</a>
+                        </p>
+                        <p class="panel-small">70.000</p>
+                        <p><a href="#">Spend</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span class="bold">Campaigns</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9 col-md-8 col-sm-7 col-xs-5">
+                <button type="button" class="create-new btn btn-info">CREATE NEW</button>
+            </div>
+            <div class="col-lg-3 col-md-3 table-buttons">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-primary">List</button>
+                    <button type="button" class="btn btn-primary active">Timeline</button>
+                </div>
+            </div>
+        </div>
+        <div class="row table-section">
+            <div class="col-md-12">
+                <table class="bold table table-striped">
+                    <thead>
+                        <tr>
+                            <th><span class="bold order-desc ligth-grey hidden-xs"></span>Campaign Name</th>
+                            <th><span class="bold order-desc ligth-grey hidden-xs"></span>Status</th>
+                            <th><span class="bold order-desc ligth-grey hidden-xs"></span>Marketing goal</th>
+                            <th><span class="bold order-desc ligth-grey hidden-xs"></span>Tags</th>
+                            <th><span class="bold order-desc dark-grey hidden-xs"></span>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Campaign 27</td>
+                            <td><span class="dot orange"></span>Prediction</td>
+                            <td>Raise awareness</td>
+                            <td>Brand: BW7</td>
+                            <td>01/06/16-31/08/16</td>
+                        </tr>
+                        <tr>
+                            <td>Campaign 3</td>
+                            <td><span class="dot orange"></span>Prediction</td>
+                            <td>Gain new subscribers</td>
+                            <td>Product: Newsletter</td>
+                            <td>01/02/16-30/02/16</td>
+                        </tr>
+                        <tr>
+                            <td>Campaign 9</td>
+                            <td><span class="dot orange"></span>Prediction</td>
+                            <td>Gain new subscribers</td>
+                            <td>Product: Newsletter</td>
+                            <td>15/01/16-31/03/16</td>
+                        </tr>
+                        <tr>
+                            <td>Campaign 22</td>
+                            <td><span class="dot green"></span>Running</td>
+                            <td>Raise awareness</td>
+                            <td>Brand: BW7; Product: RTPM</td>
+                            <td>01/01/16-31/01/16</td>
+                        </tr>
+                        <tr>
+                            <td>Campaign 4</td>
+                            <td><span class="dot green"></span>Running</td>
+                            <td>Raise sales</td>
+                            <td>Product: RTPM</td>
+                            <td>15/12/16-15/01/16</td>
+                        </tr>
+                        <tr>
+                            <td>Campaign 2</td>
+                            <td><span class="dot blue"></span>Finished</td>
+                            <td>Raise awareness</td>
+                            <td>Product: RTPM</td>
+                            <td>01/12/16-31/12/16</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span class="bold">Creative materials</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button type="button" class="upload-new btn btn-info">UPLOAD NEW</button>
+            </div>
+        </div>
+        <div class="row checkboxes">
+            <label>
+                <input type="checkbox" value="All"><span>All</span>
+            </label>
+            <label>
+                <input type="checkbox" checked="checked" value="TV"><span>TV</span>
+            </label>
+            <label>
+                <input type="checkbox" value="Radio"><span>Radio</span>
+            </label>
+            <label>
+                <input type="checkbox" checked="checked" value="Print"><span>Print</span>
+            </label>
+            <label>
+                <input type="checkbox" checked="checked" value="Outdoor"><span>Outdoor</span>
+            </label>
+            <label>
+                <input type="checkbox" checked="checked" value="Online"><span>Online</span>
+            </label>
+        </div>
+        <div class="row creative-materials">
+            <div class="panel-img panel panel-default col-xs-3">
+                <div class="panel-body">
+                    <div class="image" style="background: url('Assets/Material 1.PNG'); background-size: cover;">
+                    </div>
+                    <div class="text text-center">
+                        <p class="bold">The truth</p>
+                    </div>
+                    <div class="link text-center">
+                        <a href="#">Print</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-img panel panel-default col-xs-3">
+                <div class="panel-body">
+                    <div class="image" style="background: url('Assets/Material 2.PNG'); background-size: cover;">
+                    </div>
+                    <div class="text text-center">
+                        <p class="bold">Summer campaign 3</p>
+                    </div>
+                    <div class="link text-center">
+                        <a href="#">TV</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-img panel panel-default col-xs-3">
+                <div class="panel-body">
+                    <div class="image" style="background: url('Assets/Material 3.PNG'); background-size: cover;">
+                    </div>
+                    <div class="text text-center">
+                        <p class="bold">Job fair banner</p>
+                    </div>
+                    <div class="link text-center">
+                        <a href="#">Outdoor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-img panel panel-default col-xs-3">
+                <div class="panel-body">
+                    <div class="image" style="background: url('Assets/Material 4.PNG'); background-size: contain; background-repeat: no-repeat;
+    background-position-x: 3em;">
+                    </div>
+                    <div class="text text-center">
+                        <p class="bold">Offer free trial</p>
+                    </div>
+                    <div class="link text-center">
+                        <a href="#">Online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer" class="container-fluid">
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-inner navbar-content-center">
+                <div class="footer-col col-lg-5 col-md-5 col-xs-5 col-md-offset-1">
+                    <p class="footer-left">&copy; Blackwood Seven A/S</p>
+                </div>
+                <div class="footer-col col-md-3 col-xs-3">
+                    <a href="#" class="feedback">Feedback</a>
+                </div>
+                <div class="footer-col col-lg-3 col-md-2 col-xs-4 social">
+                    <ul>
+                        <li>
+                            <img src="Assets/facebook.png">
+                        </li>
+                        <li>
+                            <img src="Assets/twitter.png">
+                        </li>
+                        <li>
+                            <img src="Assets/linkedin.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>

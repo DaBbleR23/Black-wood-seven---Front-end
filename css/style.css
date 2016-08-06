@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'LabGrotesqueWeb';
+    /*a name to be used later*/
+    
+    src: url('../Assets/Lab Grotesque Web/LabGrotesqueWeb-Regular.ttf');
+}
+body {
+    background-color: #f9f9f9;
+    font-family: 'LabGrotesqueWeb';
+}
+.bold {
+    font-weight: bold;
+}
+.navbar-brand {
+    background: url(../Assets/bw7_logo_white.png) center / contain no-repeat;
+    width: 73px;
+    height: 38px;
+    margin-top: 5px;
+}
+.navbar-right {
+    text-align: center;
+    margin-right: 3em;
+}
+#client-section p {
+    color: white;
+    margin-bottom: 1px;
+    margin-top: 2px;
+}
+#client-section a {
+    padding: 0px;
+    color: #55B3EB;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #1a92da;
+}
+.kpi-panel {
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px #dfdfdf;
+    border: 0px;
+}
+.kpi-panel .panel-heading {
+    background-color: #e8e8e8;
+    border-radius: 0px;
+}
+.kpi-panel>.panel-body p {
+    text-align: center;
+}
+.kpi-panel>.panel-body > p.panel-big {
+    font-size: 1.6em;
+    margin-bottom: -4px;
+}
+.kpi-panel>.panel-body > p.panel-small {
+    font-size: 1.2em;
+    margin-bottom: -4px;
+}
+.kpi-panel>.panel-body > p > a {
+    font-size: 0.8em;
+}
+.dot:before {
+    content: "\f111";
+    font-family: FontAwesome;
+    margin-right: 4px;
+    padding-right: 0.5em;
+}
+.orange {
+    color: #e6a05e;
+}
+.blue {
+    color: #00b0eb;
+}
+.green {
+    color: #35a45b;
+}
+td {
+    border-right: 1px solid #eaeaea;
+}
+thead {
+    background-color: #e8e8e8;
+}
+thead > tr > th {
+    font-weight: normal;
+}
+.dark-grey {
+    color: #434242;
+}
+.ligth-grey {
+    color: #d0d0d0;
+}
+.order-desc:after {
+    content: "\f0dd";
+    font-family: FontAwesome;
+    float: right;
+    font-size: 2em;
+    margin-top: -0.6em;
+}
+.row {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.create-new,
+.upload-new {
+    border: 0px;
+    box-shadow: 2px 2px 1px #6590b0;
+    border-radius: 0px;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+.table-section {
+    margin-top: 5em;
+}
+.table-buttons {
+    left: 5em;
+}
+.table-buttons > div > button {
+    min-width: 7em;
+}
+.table-buttons .btn-group {
+    box-shadow: 1px 1px 1px #6590b0;
+    border-radius: 4px;
+}
+.checkboxes {
+    margin-left: 0.2em;
+}
+.checkboxes label span {
+    padding-left: 0.3em;
+    padding-right: 1em;
+}
+.checkboxes > label:nth-child(1) {
+    border-right: 1px solid black;
+    margin-right: 1em;
+}
+#footer {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#footer .navbar {
+    margin-bottom: 0px;
+}
+.social img {
+    width: 27px;
+    margin-left: 8px;
+}
+.social li {
+    list-style: none;
+    display: inline;
+}
+.footer-col {
+    color: white;
+    padding-top: 1em;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.creative-materials .panel-body {
+    padding: 0px;
+    padding-bottom: 1em;
+}
+.panel-img {
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: 1px 1px 1px #dfdfdf;
+}
+.creative-materials .panel-img .panel-body .image {
+    min-height: 7.8em;
+}
+.creative-materials .panel-img .panel-body .text {
+    margin-top: 1em;
+}
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {
+    .navbar-inverse .navbar-nav>li>a {
+        text-align: center;
+    }
+    .panel-img {
+        max-width: 15em;
+        margin-right: 2em;
+        min-width: 15em;
+    }
+    .creative-materials {
+        margin-left: 4em;
+    }
+}
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+    .navbar-inverse .navbar-nav>li>a {
+        text-align: center;
+    }
+    .panel-img {
+        max-width: 15em;
+        margin-right: 2em;
+        min-width: 15em;
+    }
+    .creative-materials {
+        margin-left: 1em;
+    }
+}
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    .panel-img {
+        max-width: 15em;
+        margin-right: 2em;
+    }
+    .social {
+        padding-left: 0em;
+    }
+}
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .panel-img {
+        max-width: 15em;
+        margin-right: 2em;
+    }
+}
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+    .panel-container {
+        width: 18%;
+    }
+    .panel-img {
+        max-width: 15em;
+        margin-right: 3em;
+    }
+    .social {
+        padding-left: 3em;
+    }
+}
